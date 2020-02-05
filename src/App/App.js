@@ -1,0 +1,1 @@
+import './booystrap.min.css';

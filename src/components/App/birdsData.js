@@ -10,69 +10,69 @@ const birdsData = [
     },
     {
       id: 32874,
-      name: 'Илья Протько',
-      species: 'Lisii',
-      description: 'Это птица? Это самолёт... Это ИЛЬЯ! Данный вид довольно популярен в наше время, т.к. трахает всё что движется. На его пути лучше не попадаться',
-      image: 'https://sun9-19.userapi.com/c852016/v852016908/f05a2/uSu7j8yMSjM.jpg',
-      audio: 'https://psv4.userapi.com/c852532//u190041137/audiomsg/d13/4a639643d8.mp3'
+      name: 'Болотная сова',
+      species: 'Asio flammeus',
+      description: 'Болотная сова — птица отряда совообразных с короткими ушными пучками перьев, состоящими лишь из 3—4 перьев. Сверху ржавчинного цвета с тёмными и беловатыми продольными пятнами, снизу — светлее с простыми тёмно-коричневыми стержневыми пятнами.',
+      image: 'https://imgprx.livejournal.net/f54ae23f43a560b10df5663e90e1b6e427ac5350/8hdHeaBNRS0HEHbGg0Ax9ldQWvekCP1aplzEqvBwklY2wdqr5zaqzN-cWh__Jaakh-h-hGO8vyYengxz1_34QzVT_loivNlJuBqp62z7MyOlG6ytBDEDIgslO8JFBvPw',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC407665-Leipoa_ocellata-FL%20Hattah%20NP%2020Oct15%208.04am%20LS117980a.mp3'
     },
     {
-      id: 3,
-      name: 'Ласточка',
-      species: 'Delichon urbicum',
-      description: 'Для ласточек характерно негромкое щебетание. Песни ласточек не смолкают на протяжении всего лета. Исследователи различают у птиц до 6 щебечущих звуков: «вит», «ви-вит», «чивит», «чиривит» и т.п. Ласточки любят петь дуэтом.',
-      image: 'https://sun9-19.userapi.com/c852016/v852016908/f05a2/uSu7j8yMSjM.jpg',
-      audio: 'https://psv4.userapi.com/c852532//u190041137/audiomsg/d13/4a639643d8.mp3'
+      id: 88482,
+      name: 'Беркут',
+      species: 'Aquila chrysaetos',
+      description: 'Одна из наиболее известных хищных птиц семейства ястребиных, самый крупный орёл. Распространён в Северном полушарии, где обитает преимущественно в горах, в меньшей степени на равнинных открытых и полуоткрытых ландшафтах. Избегает жилых районов, чувствителен к беспокойству со стороны человека.',
+      image: 'https://avatars.mds.yandex.net/get-pdb/1813491/18be1eb8-e97a-43e2-9355-56d09ac48585/s1200',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/HMJIMVISCP/XC518798-guila%20Real-%5BAudioTrimmer.com%5D.mp3'
     },
     {
-      id: 4,
-      name: 'Козодой',
-      species: 'Caprimulgus europaeus',
-      description: 'Козодой – неприметная птица, известная благодаря своему голосу. Песня козодоя звучит как монотонная трель похожая на тарахтение мотоцикла. Такое дребезжание слышно от заката до рассвета, его тональность, частота и громкость изменяются. ',
-      image: 'https://live.staticflickr.com/65535/48456345286_dbc8530027.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC486956-190623_22.37h_nachtzwaluw_rechte%20heide_zang_ad%20_2ex_gezien_.mp3'
+      id: 24307,
+      name: 'Сапсан',
+      species: 'Falco peregrinus',
+      description: 'Хищная птица из семейства соколиных, распространённая на всех континентах, кроме Антарктиды. Размером с серую ворону, выделяется тёмным, аспидно-серым оперением спины, пёстрым светлым брюхом и чёрной верхней частью головы, а также чёрными «усами».',
+      image: 'https://avatars.mds.yandex.net/get-pdb/1757027/9618c761-29eb-4512-90a7-33ed0ef6e72c/s1200',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/UGKDXJQJTC/XC524492-P1240024.mp3'
     },
     {
-      id: 5,
-      name: 'Кукушка',
-      species: 'Cuculus canorus',
-      description: 'Кукушку назвали так из-за особенностей ее песен. Звонкое «ку-ку» не спутать ни с какой другой птицей. Кукушки не строят гнезда, их потомство выращивают другие виды пернатых, которым кукушки подбрасывают свои яйца.',
-      image: 'https://live.staticflickr.com/65535/48377838151_e15f430ec1.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501461-190616_08.13h_koekoek_brabantse%20biesbosch%20jantjesplaat_roep_1%20ex_ad%20m_ter%20plaatse%20zingend_gezien_.mp3'
+      id: 86846,
+      name: 'Удод',
+      species: 'Upupa epops',
+      description: 'Небольшая ярко окрашенная птица с длинным узким клювом и хохолком, иногда раскрываемым в виде веера. Широко распространён в южных и центральных областях Европы и Азии, а также почти на всей территории Африки.',
+      image: 'https://cdn.fishki.net/upload/post/2018/03/06/2530882/2301093.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/LNDCYHUSPR/XC522078-Abubilla-%20Upupa%20epops.mp3'
     },
     {
-      id: 6,
-      name: 'Синица',
-      species: 'Parus major',
-      description: 'В щебетании синиц различают более 40 различных звуковых сочетаний. Поют они практически круглый год, немного затихая только зимой. Синицы настоящие санитары леса. Одна пара синиц в период гнездования оберегает от вредителей десятки деревьев.',
-      image: 'https://live.staticflickr.com//65535//49366042493_c48c81d58d.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC518417-Kj%C3%B8ttmeis%20XC%20Helg%C3%B8ya%20Elias%20A.%20Ryberg20200108133922_079.mp3'
+      id: 45928,
+      name: 'Камышница',
+      species: 'Gallinula chloropus',
+      description: 'Небольшая, размером с голубя, водоплавающая птица из семейства пастушковых, широко распространённая на всех материках, за исключением Австралии и Антарктиды. Типичный обитатель разнообразных водоёмов со стоячей или проточной водой и заболоченными, заросшими берегами.',
+      image: 'https://photoclub.by/images/main62/627180_main.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/SHDHTEQQKR/XC524425-Gallinule.mp3'
     }
   ],
   [
     {
-      id: 1,
-      name: 'Воробей',
-      species: 'Passer domesticus',
-      description: 'Воробьи являются самыми известными и узнаваемыми пернатыми. Их легко узнать по пестрому оперению и задорному чириканью. Воробьи относятся к синатропному виду — они селятся поблизости к человеческому жилищу.',
-      image: 'https://live.staticflickr.com//65535//49366595303_06cf65b07e.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/CXFHOPIVAS/XC503224-191020_0134.mp3'
+      id: 61251,
+      name: 'Обыкновенный гоголь',
+      species: 'Bucephala clangula',
+      description: 'птица семейства утиных, нырковая утка средней величины с большой округлой головой, коротким клювом и контрастным чёрно-белым оперением. Распространена в зоне лесов северного полушария — как в Евразии, так и в Америке.',
+      image: 'https://belsat.eu/wp-content/uploads/2016/01/hohal1.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/RNMRWBXEZJ/XC511551-Brilduiker%2C%20wingbeats%2C%202910119%2C%200305%20uur.mp3'
     },
     {
-      id: 2,
-      name: 'Грач',
-      species: 'Corvus frugilegus',
-      description: 'Грачи очень умные и сообразительные птицы. С помощью клюва они создают и используют простейшие орудия. У грачей развит рефлекс на звуки трактора. Услышав «тарахтение», они летят на звук – трактор пашет землю, значит, в этом месте много корма.',
-      image: 'https://live.staticflickr.com//65535//49347123322_291c86b016.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/RLRHCUIPIY/XC512540-gawron%20Suble%2019.12.19%20%2012.35.mp3'
+      id: 6837,
+      name: 'Огарь',
+      species: 'Tadorna ferruginea',
+      description: 'водоплавающая птица семейства утиных, родственная пеганке. Характерно оранжево-коричневое оперение, при этом голова имеет более светлую окраску. Крылья белые с чёрными маховыми перьями.',
+      image: 'https://animalreader.ru/wp-content/uploads/2015/06/ogar-golosistaja-krasnaja-utka-animal-reader.-ru-003.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/MCFGTDXKHO/XC507039-Teil6.mp3'
     },
     {
-      id: 3,
-      name: 'Галка',
-      species: 'Coloeus monedula',
-      description: 'Слово «галка» произошло из старославянского языка и переводится как «чёрный». Этим словом часто называют воронов или других черных птиц. Латинское название галки «monedula» связывают со словами монета за любовь птицы к блестящим и ярким вещам.',
-      image: 'https://live.staticflickr.com//65535//49237149586_993cf685c5.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC510498-Coloeus%20monedula_2019.11.13_11.55_01.mp3'
+      id: 26769,
+      name: 'Гуменник',
+      species: 'Anser fabalis',
+      description: 'Крупная птица буровато-серой окраски, напоминающий серого гуся. Клюв чёрный с оранжевой полоской посередине. Самец и самка не отличаются по окраске, однако самка несколько мельче.',
+      image: 'https://barentsmap.com/upload/iblock/193/193cc9ad2c152b76029f0026dd402cf5.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/BPSDQEOJWG/XC511820-S%C3%A4dg%C3%A5s-lockl%C3%A4te%20uppflog%20flock-Ekeskog%2C%20T%C3%B6reboda%20Vg-%282019-11-09%2009-41%29-LS143538.mp3'
     },
     {
       id: 4,

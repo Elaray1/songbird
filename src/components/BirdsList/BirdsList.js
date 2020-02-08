@@ -19,6 +19,7 @@ class BirdList extends Component {
   }
 
   isCorrectBird = (birdInfo, e) => {
+    if (e.target.tagName !== 'LI') return;
     this.setState({
       birdInfo: birdInfo,
     });

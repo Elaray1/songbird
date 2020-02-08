@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './style.css';
 import ReactAudioPlayer from 'react-audio-player';
+import correctAnswerSound from './correct-answer.mp3';
+import incorrectAnswerSound from './incorrect-answer.mp3';
+import congratsSound from './congrats-audio.mp3';
 
 
 class BirdList extends Component {
@@ -12,6 +15,7 @@ class BirdList extends Component {
       score: 5,
     }
     this.nextLvlRef = React.createRef();
+    this.congratsAudio = new Audio(congratsSound);
   }
 
   isCorrectBird = (birdInfo, e) => {
@@ -25,6 +29,8 @@ class BirdList extends Component {
       return;
     };
     if (birdInfo.name === this.props.birdsData[this.props.currentRound][this.props.randomNumber].name) {
+       const correctAnswerAudio = new Audio(correctAnswerSound);
+       correctAnswerAudio.play();
        e.target.firstChild.classList.add("correct-answer");
        this.nextLvlRef.current.classList.add("correct-answer-next-lvl");
        this.props.correctBirdName(birdInfo);
@@ -35,6 +41,8 @@ class BirdList extends Component {
        });
      } else {
        if (e.target.firstChild.classList.contains("incorrect-answer")) return;
+       const incorrectAnswerAudio = new Audio(incorrectAnswerSound);
+       incorrectAnswerAudio.play();
        e.target.firstChild.classList.add("incorrect-answer");
        this.setState({
          score: this.state.score - 1,
@@ -67,6 +75,8 @@ class BirdList extends Component {
         e.classList.add('hide');
       });
       document.querySelector('.congrats-container').classList.remove('hide');
+      this.congratsAudio.play();
+      setTimeout(() => this.congratsAudio.pause(), 3000);
     }
   }
 
@@ -109,10 +119,10 @@ class BirdInfo extends Component {
             <ul className="bird-body">
               <li>{birdInfo.name}</li>
               <li>{birdInfo.species}</li>
-              <li><ReactAudioPlayer src={birdInfo.audio} controls /></li>
+              <li><ReactAudioPlayer className="bird-info-audio-player" src={birdInfo.audio} controls /></li>
             </ul>
           </div>
-          <p>{birdInfo.description}</p>
+          <p className="bird-description-info">{birdInfo.description}</p>
         </div>}</div>
     );
   }

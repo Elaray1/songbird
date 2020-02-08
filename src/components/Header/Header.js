@@ -3,13 +3,6 @@ import './style.css';
 import logo from './songbird.png';
 
 class Header extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     score: 0,
-  //   }
-  // }
-
   render() {
     return (
       <header>

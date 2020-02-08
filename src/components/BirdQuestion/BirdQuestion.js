@@ -9,6 +9,7 @@ class BirdQuestion extends Component {
       birdAudio: '',
     }
     this.corsUrl = 'https://cors-anywhere.herokuapp.com/';
+    this.audioRef = React.createRef();
   }
 
   // birdVoiceAudio = (birdName) => {
@@ -31,13 +32,18 @@ class BirdQuestion extends Component {
 
   render() {
     const birdsData = this.props.birdsData;
+    if (this.props.birdName !== '*****') {
+      this.rap.audioEl.pause();
+    }
     return (
       <div className="jumbotron bird-question">
         <img src={this.props.birdImage} alt="bird" />
         <div>
           <p>{this.props.birdName}</p>
           <ReactAudioPlayer
+            className="audio-player"
             src={birdsData[this.props.currentRound][this.props.randomNumber].audio}
+            ref={(element) => { this.rap = element; }}
             controls
           />
         </div>

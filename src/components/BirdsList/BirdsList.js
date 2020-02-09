@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import 'react-h5-audio-player/lib/styles.css';
 import './style.css';
-import ReactAudioPlayer from 'react-audio-player';
+import AudioPlayer from 'react-h5-audio-player';
 import correctAnswerSound from './correct-answer.mp3';
 import incorrectAnswerSound from './incorrect-answer.mp3';
 import congratsSound from './congrats-audio.mp3';
@@ -92,7 +93,7 @@ class BirdList extends Component {
         <div className="jumbotron bird-list">
           <ul>{birdsList}</ul>
         </div>
-        <BirdInfo birdInfo={this.state.birdInfo} />
+        <BirdInfo birdInfo={this.state.birdInfo} key={this.state.birdInfo === null ? this.state.birdInfo : this.state.birdInfo.name} />
       </div>
       <div className="next-lvl" ref={this.nextLvlRef} onClick={this.nextRound}><p>Следующий ранд</p></div>
       </div>
@@ -106,25 +107,25 @@ class BirdInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      birdDescriptionDefault: <div><p>Послушайте плеер.</p><p>Выберите птицу из списка</p></div>,
+      birdInfoBlock: !this.props.birdInfo || (!document.querySelector('.correct-answer') && !document.querySelector('.incorrect-answer')) ? <div><p>Послушайте плеер.</p><p>Выберите птицу из списка</p></div> :
+               <div>
+                <div className="bird-description">
+                  <img src={this.props.birdInfo.image} alt="bird"/>
+                  <ul className="bird-body">
+                    <li>{this.props.birdInfo.name}</li>
+                    <li>{this.props.birdInfo.species}</li>
+                    <li><AudioPlayer
+                      src={this.props.birdInfo.audio}
+                    /></li>
+                  </ul>
+                </div>
+                <p className="bird-description-info">{this.props.birdInfo.description}</p>
+              </div>
     }
   }
   render() {
-    const birdInfo = this.props.birdInfo;
     return (
-      <div className="jumbotron bird-info">{!birdInfo || (!document.querySelector('.correct-answer') && !document.querySelector('.incorrect-answer')) ?
-      this.state.birdDescriptionDefault :
-        <div>
-          <div className="bird-description">
-            <img src={birdInfo.image} alt="bird"/>
-            <ul className="bird-body">
-              <li>{birdInfo.name}</li>
-              <li>{birdInfo.species}</li>
-              <li><ReactAudioPlayer className="bird-info-audio-player" src={birdInfo.audio} controls /></li>
-            </ul>
-          </div>
-          <p className="bird-description-info">{birdInfo.description}</p>
-        </div>}</div>
+      <div className="jumbotron bird-info">{this.state.birdInfoBlock}</div>
     );
   }
 }

@@ -38,6 +38,7 @@ audio {
   }
   .audio-player {
     width: 215px;
+    min-width: 255px;
   }
 }
 
@@ -48,5 +49,16 @@ audio {
   }
   .audio-player {
     width: 255px;
+    min-width: 255px;
   }
+}
+
+
+.rhap_container {
+  background-color: inherit;
+  box-shadow: none;
+}
+
+.rhap_time {
+  color: white;
 }

@@ -11,25 +11,6 @@ class BirdQuestion extends Component {
     this.corsUrl = 'https://cors-anywhere.herokuapp.com/';
     this.audioRef = React.createRef();
   }
-
-  birdVoiceAudio = (birdName) => {
-    const url = `https://www.xeno-canto.org/api/2/recordings?query=${birdName}`;
-    this.birdVoiceData(url);
-  }
-
-  birdVoiceData = async (url) => {
-    const data = await fetch(this.corsUrl + url).then((res) => res.json());
-    this.setState({
-      birdAudio: data.recordings[0].file,
-    });
-    console.log(data.recordings[0].file);
-    return data.recordings[0].file;
-  }
-
-  componentDidMount() {
-    this.birdVoiceAudio('Anser fabalis');
-  }
-
   render() {
     const birdsData = this.props.birdsData;
     if (this.props.birdName !== '*****') {

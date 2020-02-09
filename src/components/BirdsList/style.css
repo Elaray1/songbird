@@ -133,6 +133,9 @@
   .bird-description-info {
     font-size: 15px;
   }
+  .rhap_container {
+    min-width: 240px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -144,6 +147,8 @@
   }
   .bird-info-audio-player {
     width: 260px;
+  }
+  .rhap_container {
     min-width: 260px;
   }
 }

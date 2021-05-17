@@ -1,0 +1,48 @@
+.try-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #839496;
+  border-radius: 0.3rem;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.try-again p {
+  margin: 15px 0 !important;
+}
+
+.congrats {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.congrats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.congrats-container div {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.congrats-container img {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 995px) {
+  .congrats-container {
+    margin-top: 0px;
+  }
+  .congrats {
+    font-size: 42px;
+  }
+}
